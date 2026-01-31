@@ -1,10 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Homepage</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+
+    </style>
   </head>
   <body>
     <!-- nav -->
@@ -52,33 +65,146 @@
     <div class="container">
       <!-- div that divides -->
 
-      <div
-        class="d-flex flex-column align-content-center justify-content-between p-2 m-2"
-      >
-        <div>
-          <p class="fw-bold">Billing Address</p>
-        </div>
-        <!-- card left -->
-        <div class="card border shadow-sm ">
-
+      <div class="row g-3 p-2 m-2">
+        <!-- LEFT -->
+        <div class="col-8">
+          <div>
+            <p class="fw-bold">Billing Address</p>
+          </div>
+          <!-- card left -->
+          <div class="card border shadow-sm">
             <!-- first col that is side by side -->
-          <div class="d-flex flex-row ">
-            <!-- left  -->
-            <div class="container m-2 p-2">
-              <label for="firt-name" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="first-name" />
+            <div class="d-flex flex-row">
+              <!-- left  -->
+              <div class="container m-2 p-2">
+                <label for="firt-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+
+              <!-- right -->
+              <div class="container m-2 p-2">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
             </div>
 
-            <!-- right -->
-            <div class="container m-2 p-2">
-              <label for="last-name" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="last-name" />
+            <div class="m-2 p-2">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.coom"
+              />
+            </div>
+
+            <div class="d-flex flex-row">
+              <!-- left -->
+              <div class="col-5 m-2 p-2">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country">
+                  <option selected disabled>Choose...</option>
+                  <option value="PHL">Philippines</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="DE">Germany</option>
+                  <option value="FR">France</option>
+                </select>
+              </div>
+
+              <!-- right -->
+              <div class="col-3 m-2 p-2">
+                <label for="zip-code" class="form-label">Zip </label>
+                <input type="text" class="form-control" id="zip-code" />
+              </div>
+            </div>
+            <div class="p-2 m-2 border-top border-bottom border-0">
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  value=""
+                  id="shipping-similarity"
+                />
+                <label
+                  for="shipping-similarity"
+                  class="form-check-label fw-medium"
+                  >Shipping address is the same as my billing address</label
+                >
+              </div>
+
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  value=""
+                  id="save-info"
+                />
+                <label for="save-info" class="form-check-label fw-medium"
+                  >Save this information for next time</label
+                >
+              </div>
+            </div>
+
+            <div class="p-2 m-2 mt-2 d-flex flex-column border-0">
+              <a href="#" class="btn btn-primary">Continue to checkout</a>
             </div>
           </div>
+        </div>
 
-          <div class="m-2 p-2">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.coom">
+        <!-- RIGHT -->
+        <div class="col-4">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fw-bold text-primary">Event Perks</p>
+            <span class="badge rounded-pill bg-primary mb-3">3</span>
+          </div>
+          <!-- card right -->
+          <div class="card border shadow-sm">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start py-3"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Workshops</div>
+                    <small class="text-muted"
+                      >Hands-on Bootstrap training</small
+                    >
+                  </div>
+                  <span>$0</span>
+                </li>
+
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-start py-3"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Free Lunch</div>
+                    <small class="text-muted">Gourmet catering</small>
+                  </div>
+                  <span>$0</span>
+                </li>
+
+                <li
+                  class="list-group-item list-group-item-light d-flex justify-content-between align-items-start py-3"
+                >
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold text-success">Early Bird Promo</div>
+                    <small class="text-success text-uppercase"
+                      >Code: HTML5</small
+                    >
+                  </div>
+                  <span class="text-success">-$20</span>
+                </li>
+
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center py-3"
+                >
+                  <span>Total (USD)</span>
+                  <strong class="fs-5">$150</strong>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
