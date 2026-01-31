@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Homepage</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">TechSummit 2025</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Speaker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Schedule</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        class="card d-flex flex-row justify-content-center align-content-center shadow-sm p-2 m-3"
+      >
+        <div class="card-body text-center">
+          <p class="fs-1 fw-bold">Join the Revolution</p>
+          <p class="fs-6">The biggest HTML & CSS conference of the year.</p>
+          <div>
+            <a class="btn btn-primary" href="#">Reserve Your Seat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- div that divides -->
+
+      <div
+        class="d-flex flex-column align-content-center justify-content-between p-2 m-2"
+      >
+        <div>
+          <p class="fw-bold">Billing Address</p>
+        </div>
+        <!-- card left -->
+        <div class="card border shadow-sm ">
+
+            <!-- first col that is side by side -->
+          <div class="d-flex flex-row ">
+            <!-- left  -->
+            <div class="container m-2 p-2">
+              <label for="firt-name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="first-name" />
+            </div>
+
+            <!-- right -->
+            <div class="container m-2 p-2">
+              <label for="last-name" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="last-name" />
+            </div>
+          </div>
+
+          <div class="m-2 p-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.coom">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
