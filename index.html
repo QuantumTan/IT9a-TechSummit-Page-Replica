@@ -1,28 +1,23 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Homepage</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>TechSummit | 2025</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
-
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-      
-
-    </style>
   </head>
   <body>
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
+      <div class="container px-lg-4">
         <a class="navbar-brand fw-bold" href="#">TechSummit 2025</a>
         <button
           class="navbar-toggler"
@@ -50,10 +45,10 @@
 
     <div class="container">
       <div
-        class="card d-flex flex-row justify-content-center align-content-center shadow-sm p-2 m-3"
+        class="card d-flex flex-row justify-content-center align-content-center shadow-sm p-lg-5 g-3 mx-2 my-5 border shadow-sm" 
       >
         <div class="card-body text-center">
-          <p class="fs-1 fw-bold">Join the Revolution</p>
+          <p class="display-5 fw-bolder">Join the Revolution</p>
           <p class="fs-6">The biggest HTML & CSS conference of the year.</p>
           <div>
             <a class="btn btn-primary" href="#">Reserve Your Seat</a>
@@ -63,31 +58,29 @@
     </div>
 
     <div class="container">
-      <!-- div that divides -->
-
-      <div class="row g-3 p-2 m-2">
-        <!-- LEFT -->
-        <div class="col-8">
+      <div class="row g-3 p-2">
+        <!-- LEFT CARD-->
+        <div class="col-12 col-lg-8">
           <div>
-            <p class="fw-bold">Billing Address</p>
+            <p class="fs-3 fw-bold">Billing Address</p>
           </div>
           <!-- card left -->
           <div class="card border shadow-sm">
-            <!-- first col that is side by side -->
+            <!-- first col that is side by side (first name  a nd    the last name)-->
             <div class="d-flex flex-row">
-              <!-- left  -->
+              <!-- left  first name-->
               <div class="container m-2 p-2">
                 <label for="firt-name" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="first-name" />
               </div>
 
-              <!-- right -->
+              <!-- right last name -->
               <div class="container m-2 p-2">
                 <label for="last-name" class="form-label">Last Name</label>
                 <input type="text" class="form-control" id="last-name" />
               </div>
             </div>
-
+            <!-- email input -->
             <div class="m-2 p-2">
               <label for="email" class="form-label">Email</label>
               <input
@@ -98,8 +91,9 @@
               />
             </div>
 
+            <!-- country and aip code division -->
             <div class="d-flex flex-row">
-              <!-- left -->
+              <!-- left country-->
               <div class="col-5 m-2 p-2">
                 <label for="country" class="form-label">Country</label>
                 <select class="form-select" id="country">
@@ -113,12 +107,14 @@
                 </select>
               </div>
 
-              <!-- right -->
+              <!-- right zip code-->
               <div class="col-3 m-2 p-2">
                 <label for="zip-code" class="form-label">Zip </label>
                 <input type="text" class="form-control" id="zip-code" />
               </div>
             </div>
+
+            <!-- checkbox -->
             <div class="p-2 m-2 border-top border-bottom border-0">
               <div class="form-check">
                 <input
@@ -146,20 +142,20 @@
                 >
               </div>
             </div>
-
+            <!-- continue   button -->
             <div class="p-2 m-2 mt-2 d-flex flex-column border-0">
               <a href="#" class="btn btn-primary">Continue to checkout</a>
             </div>
           </div>
         </div>
 
-        <!-- RIGHT -->
-        <div class="col-4">
+        <!-- RIGHT  CARD -->
+        <div class="col-12 col-lg-4">
           <div class="d-flex justify-content-between align-items-center">
-            <p class="fw-bold text-primary">Event Perks</p>
+            <p class="fw-bold text-primary fs-3">Event Perks</p>
             <span class="badge rounded-pill bg-primary mb-3">3</span>
           </div>
-          <!-- card right -->
+          <!-- card BODY -->
           <div class="card border shadow-sm">
             <div class="card-body">
               <ul class="list-group list-group-flush">
@@ -209,7 +205,14 @@
         </div>
       </div>
     </div>
+    <!-- footer  area -->
+    <footer class="bg-white text-dark text-center p-4 m-4">
+      <p>© 2025 TechSummit</p>
 
+      <a href="#" class="text-primary mx-2">Policy</a>
+      <a href="#" class="text-primary mx-2">Terms</a>
+      <a href="#" class="text-primary mx-2">Support</a>
+    </footer>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
